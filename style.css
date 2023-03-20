@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(177, 188, 198);
+    background-image: url(cars.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+header{
+    background-image:linear-gradient(to right, rgb(206, 200, 118), rgb(167, 225, 234));
+    color: white;
+    text-align: center;
+    padding:3rem 0;
+
+}
+.container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+   
+}
+
+h2 {
+    font-size: x-large;
+    margin-bottom: 2rem;
+
+}
+
+.carData {
+    max-width: 500px;
+    display: inline-block;
+    margin: 5rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(206, 200, 118);
+    padding: 2rem;
+    border: solid;
+}
+
+
+
+label{
+    float: left;
+    padding-bottom:1.5rem;
+  
+}
+#label-color{
+    margin-top: 0.5rem;
+}
+
+
+input {
+    width:210px;
+    border-radius: 5px;
+    float: right;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;  
+}
+
+
+
+button {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(227, 93, 9);
+    color: white;
+    font-size: small;
+    margin:2rem;
+    cursor: pointer;
+
+    
+}
+
+.table {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(215, 144, 175);
+    border: solid;
+
+}
+
+th{
+    background-color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+   
+}
+
+
+
+.search{
+    width: 400px;
+    background-color: rgb(167, 225, 234);
+    margin: 5rem 1rem;
+    padding: 2rem;
+    border: solid;
+}
+
+#search-box{
+    display: flex;
+    margin:8rem 1rem;
+}
+
+#discountedprice-result{
+    font-style: italic;
+}
+
+p{
+    background-color: rgb(166, 230, 102);
+    font-weight: 700;
+    
+}

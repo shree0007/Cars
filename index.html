@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Data</title>
+</head>
+
+<body>
+
+    <header><h1>ABOUT CARS</h1></header>
+ <div class="container">
+
+    <form class="carData">
+        <h2>Insert car Data</h2>
+        <div>
+            <label for="licence">Licence number</label>
+            <input type="text" id="licence">
+        </div>
+        <div>
+            <label for="maker">Car Maker</label>
+            <input type="text" id="maker">
+        </div>
+        <div>
+            <label for="model">Car Model</label>
+            <input type="text" id="model">
+        </div>
+        <div>
+            <label for="owner">Car Owner</label>
+            <input type="text" id="owner">
+        </div>
+        <div>
+            <label for="price">Car Price</label>
+            <input type="number" id="price" placeholder="in euros">
+        </div>
+        <div>
+            <label for="color" id="label-color">Car Color</label>
+            <input type="text" id="color">
+        </div>
+        <div class="btns">
+            <button type="submit" value="submit" id="addCar">Add Car</button>
+            <button type="reset"  id="reset">Reset</button>
+        </div>
+    </form>
+
+    <div class="table">
+        <h2>Cars Database</h2>
+        <table id="details">
+            <tr>
+                <th>Licence </th>
+                <th>Maker </th>
+                <th>Model </th>
+                <th>Owner </th>
+                <th>price (euros) </th>
+                <th>Color </th>
+            </tr>
+
+        </table>
+        <button type="reset" id="deletebtn" onclick="resetData()">Delete Database</button>
+    </div>
+
+    <div class="search">
+        <h2>Search Car by licence number</h2>
+        <div id="search-box">
+            <label>Licence number</label>
+            <input type="text" id="search-input">
+        </div>
+
+        <div class="searchbtns">
+            <button type="submit" id="search-btn" onclick="searchCar()" onclick="discounted_Price()">Search</button>
+            <button type="reset" id="reset-btn" onclick="resetSearch()">Reset</button>
+        </div>
+        <p id="search-result"></p><br>
+        <p id="discountedprice-result"></p>
+    </div>
+    
+    <script src="main.js"></script>
+
+</div>
+</body>
+
+</html>
